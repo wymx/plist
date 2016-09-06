@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>My First Web!</title>
+<style type="text/css">
+
+</style>
+</head>
+<body>
+
+<center><h1>欢迎来到我的网页</h1></center>
+
+<a href="two.html"><button>跳转到第二页</button></a>
+<img src="/images/test.jpg" width = "200" height="200">
+
+
+<script>
+function changeImage()
+{
+element=document.getElementById('myimage')
+if (element.src.match("bulbon"))
+  {
+  element.src="/images/test.jpg";
+  }
+else
+  {
+  element.src="/images/image.png";
+  }
+}
+</script>
+
+<img id="myimage" onclick="changeImage()" src="/images/test.jpg">
+
+<p>点击图片更换图片</p>
+
+<input type="text" placeholder="请输入内容" />
+<input type="button" value="提交" />
+<a href="404.html"><button>跳转到错误界面</button></a>
+
+<table>
+<tr>
+<td>内容是</td>就是这个feel倍爽
+<h1>非居中标题显示</h1>
+</tr>
+</table>
+
+<a href="http://www.weiyouming.top" style="text-decoration:none;">刷新本页</a>
+
+</body>
+</html>
